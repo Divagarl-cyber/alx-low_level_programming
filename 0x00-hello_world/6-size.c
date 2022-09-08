@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
   * main - print the string in the put function
   *
@@ -18,4 +19,5 @@ int main(void)
 	printf("Size of an int: %ld byte(s)\n", sizeof(i));
 	printf("Size of a long int: %ld byte(s)\n", sizeof(li));
 	printf("Size of a long long int: %zu byte(s)\n", sizeof(lli));
+	printf("Size of a float: %ld byte(s)\n", sizeof(f));
 }
