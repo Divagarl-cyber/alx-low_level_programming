@@ -1,19 +1,29 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 /**
- * main - print if the number is postive, zero, or negative
- *
- * Description: using the main function
- * this program prints "Programming is positive, zero, or negative"
- * Return: Always 0 (Success)
+ * main - Determine if a number is postive, negative or zero
+ * Description: using main function printf
+ * if the number is positive, negative or zero
+ * Return: 0
  */
 int main(void)
 {
 	int n;
 
-	for (n = '0'; n <= '9'; n++)
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
 	{
-		putchar(n);
+		printf("%i is positive\n", n);
 	}
-	putchar('\n');
+	else if (n < 0)
+	{
+		printf("%i is negative\n', n);
+	}
+	else
+	{
+		printf(" %i is zero\n", n);
+	}
 	return (0);
 }
