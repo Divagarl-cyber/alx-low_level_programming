@@ -1,24 +1,18 @@
 #include <stdio.h>
 /**
- * main - printing numbers from 0-9 with commas and space between them
- * Description: using the main function
- * this program prints "0, 1, 2, 3, 4, 5, 6, 7, 8, 9"
+ * main - a program that prints
+ * all single digit numbers of base 10 starting from 0
  * Return: 0
  */
 int main(void)
 {
-	int c;
+	int i;
 
-	for (ch = 48; c <= 57; ch++)
+	for (i = 0; i < 10; i++)
 	{
-		putchar(c);
-		if (c != 57)
-		{
-			putchar(',');
-			putchar(' ');
-		}
+		printf("%i", i);
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
 
